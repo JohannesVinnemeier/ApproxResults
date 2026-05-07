@@ -1,0 +1,80 @@
+\documentclass{article}
+\usepackage{geometry}
+\geometry{a4paper, left=3cm, right=3cm, top=2.5cm, bottom=2.5cm}
+\usepackage{amsfonts,amsmath,amssymb,amsthm}
+\usepackage{enumerate}
+\usepackage[justification=centering]{caption}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{mathrsfs}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{needspace}
+
+
+%Prevents footnotes from breaking across pages
+\interfootnotelinepenalty=10000
+
+
+%Link colors
+\hypersetup{
+    colorlinks = true,
+    linkcolor = black,
+    citecolor = black,
+    urlcolor = black
+}
+
+
+% Absolute value and norm bars command. Write \abs{x} or \norm{x}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+\DeclarePairedDelimiter\norm{\lVert}{\rVert} 
+
+
+%Real, complex, natural numbers etc.
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\K}{\mathbb{K}}
+\renewcommand{\H}{\mathbb{H}}
+
+
+%Theorems, lemmas etc.
+\newtheorem{theorem}{Theorem}[subsection]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{counterexample}[theorem]{Counterexample}
+\newtheorem{exercise}[theorem]{Exercise}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem*{claim}{Claim}
+
+\renewcommand{\thesubsection}{\arabic{subsection}}
+
+%Command for a headline in the middle of a subsection
+\newcommand{\headline}[1]{
+    \vspace{10pt}
+    \noindent{\large\textit{#1}}
+    \vspace{9pt}
+}
+
+\renewcommand{\epsilon}{\varepsilon}
+
+
+\begin{document}
+
+\input{approximation_results}
+
+% Bibliography (Comment out for faster compilation)
+
+\newpage
+\nocite{*} %Include all entries from BibTeX file
+\bibliographystyle{alpha}
+\bibliography{ref}
+
+\end{document}
