@@ -1,6 +1,6 @@
 # Approximation Results for Smooth Maps
 
-This article is supposed to serve as an accessible, self-contained reference for various approximation results commonly used in differential topology. In particular, we prove approximation results for:
+This article is supposed to serve as an accessible, self-contained reference for various approximation results routinely used in differential topology. In particular, we prove approximation results for:
 
 - immersions  
 - injective immersions  
