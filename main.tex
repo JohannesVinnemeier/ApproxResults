@@ -11,6 +11,7 @@
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{needspace}
+\usepackage{titlesec}
 
 
 %Prevents footnotes from breaking across pages
@@ -56,6 +57,10 @@
 
 \renewcommand{\thesubsection}{\arabic{subsection}}
 
+\titleformat{\subsection}{\large\bfseries}{\thesubsection.}{.5em}{\centering}
+
+\titlespacing*{\subsection}{0pt}{2.25em}{0.75em}
+
 %Command for a headline in the middle of a subsection
 \newcommand{\headline}[1]{
     \vspace{10pt}
@@ -73,8 +78,8 @@
 % Bibliography (Comment out for faster compilation)
 
 \newpage
-\nocite{*} %Include all entries from BibTeX file
-\bibliographystyle{alpha}
-\bibliography{ref}
+% \nocite{*} %Include all entries from BibTeX file
+% \bibliographystyle{alpha}
+% \bibliography{ref}
 
 \end{document}
